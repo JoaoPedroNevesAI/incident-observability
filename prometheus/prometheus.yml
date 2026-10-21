@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+rule_files:
+  - "alerts.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - "alertmanager:9093"
+
+scrape_configs:
+
+  - job_name: "service-a"
+    static_configs:
+      - targets: ["service-a:8000"]
+
+  - job_name: "service-b"
+    static_configs:
+      - targets: ["service-b:8001"]

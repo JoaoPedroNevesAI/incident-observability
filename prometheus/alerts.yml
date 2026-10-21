@@ -1,0 +1,19 @@
+groups:
+  - name: incident-alerts
+    rules:
+
+      - alert: ServiceBHighErrorRate
+        expr: |
+          100 *
+          (
+            rate(service_b_errors_total[1m])
+            /
+            rate(service_b_requests_total[1m])
+          ) > 20
+        for: 0s
+        labels:
+          severity: critical
+          service: service-b
+        annotations:
+          summary: "Alta taxa de erro no Service B"
+          description: "A taxa de erro do Service B está acima de 20%."

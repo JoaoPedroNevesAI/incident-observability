@@ -1,0 +1,21 @@
+
+# Ambientes virtuais Python
+.venv/
+venv/
+**/.venv/
+**/venv/
+
+# Cache e arquivos compilados
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Configurações e segredos locais
+.env
+.env.*
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
