@@ -198,5 +198,3 @@ Esses valores são de uma execução, não médias estatísticas de MTTD ou MTTR
 - OpenTelemetry. *Signals*. https://opentelemetry.io/docs/concepts/signals/
 - Google SRE. *Postmortem Culture: Learning from Failure*. https://sre.google/resources/book-update/postmortem-culture/
 - Docker. *How Compose works*. https://docs.docker.com/compose/intro/compose-application-model/
-
-Acesso às referências em 20/10/2026.
